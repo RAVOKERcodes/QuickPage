@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickPage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar for block selection -->
+    <div class="sidebar">
+      <h3>Select Blocks</h3>
+      <button onclick="addTextBlock()">Add Text Block</button>
+      <button onclick="addImageBlock()">Add Image Block</button>
+      <button onclick="addLinkButton()">Add Link Button</button>
+      <button onclick="addFileButton()">Add File Button</button>
+      <button class="refresh-btn" onclick="refreshPage()">Refresh Content</button>
+    </div>
+
+    <!-- Content area where blocks will be added -->
+    <div class="content-area" id="content-area">
+      <!-- User blocks will be inserted here -->
+    </div>
+
+    <!-- Button to download the created content -->
+    <button class="download-btn" onclick="exportPage()">Download Page</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
